@@ -1,7 +1,9 @@
 function range(start, end, step){
-  let result = [];
-  for (let i = start; i <= end; i += step){
-    result.push(i);
+  let results = [];
+  if (step >= 0 && start < end){
+    for (let i = start; i <= end; i += step){
+      results.push(i);
+    }
   }
-  return result;
+  return results;
 }
